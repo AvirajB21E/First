@@ -1,1 +1,46 @@
-print("hi")
+import random
+
+
+#currentyear = int(input("What year is it"))
+#birth = int(input("What is your birth year"))
+#while birth < currentyear:
+  #currentyear -= 1
+  #print(currentyear)
+
+#print("Somebody call Batman")
+#print("Are you him?")
+#bat = input("Yes or No")
+#while bat != "Yes":
+  #print("Somebody call Batman")
+  #print("Are you him?")
+  #bat = input("Yes or No")
+username = "Ahmad"
+password = "just lemme copy"
+tries = 3
+
+while tries > 0:
+  user = input("Enter user")
+  pass1 = input("Enter pass")
+  
+  if user == username and pass1 == password:
+    print("correct") 
+  
+  else:
+    print("Wrong")
+    tries = tries - 1
+
+anothergo = ""
+power = ""
+powerof2 = ""
+answer1 = ""
+while anothergo!= "N":
+  power = random.randint(2,12)
+  powerof2 = 2**int(power)
+  answer1 = int(input(f"What is 2 to the power of {power}?"))
+  if answer1 == powerof2:
+    print("Correct")
+    
+  else: 
+      print(f"Wrong it is {powerof2}")
+  anothergo = input("Go again?Y/N")
+
